@@ -9,7 +9,7 @@ var Ticker = function(interval) {
 };
 
 describe('ticker', function() {
-    it('should mixin successfully', function() {
+    it('mixin', function() {
         MicroEvent.mixin(Ticker);
         assert(Ticker.prototype.bind instanceof Function, "bind is not a function");
         assert(Ticker.prototype.unbind instanceof Function, "unbind is not a function");
