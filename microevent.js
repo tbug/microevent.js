@@ -22,6 +22,13 @@
             for (var i = 0; i < events[event].length; i++) {
                 events[event][i].apply(this, Array.prototype.slice.call(arguments, 1));
             }
+        },
+        once: function (event, fct) {
+            var wrapper = function () {
+                this.unbind(event, wrapper);
+                fct.apply(this, Array.prototype.slice.call(arguments, 0));
+            };
+            this.bind(event, wrapper);
         }
     };
 
@@ -33,7 +40,7 @@
      * @param {Object} the object which will support MicroEvent
      */
     MicroEvent.mixin = function(destObject) {
-        var props = ['bind', 'unbind', 'trigger'];
+        var props = ['bind', 'unbind', 'once', 'trigger'];
         for (var i = 0; i < props.length; i++) {
             if (typeof destObject === 'function') {
                 destObject.prototype[props[i]] = MicroEvent.prototype[props[i]];
