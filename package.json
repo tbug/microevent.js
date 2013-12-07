@@ -1,6 +1,26 @@
 {
-	"name"		: "microevent",
-	"version"	: "1.0.0",
-	"description"	: "event emitter micro library (works in node+browser)",
-	"main"		: "microevent.js"
+    "name": "microevent",
+    "version": "1.1.0",
+    "license": "MIT",
+    "description": "event emitter micro library (works in node + browser)",
+    "main": "microevent.js",
+    "contributors": [
+        {
+            "name": "Henrik Tudborg",
+            "email": "henrik@tudb.org",
+            "url": "http://henriktudborg.dk"
+        }
+    ],
+    "main": "microevent.js",
+    "dependencies": {
+    },
+    "optionalDependencies": {
+    },
+    "devDependencies": {
+        "mocha": "~1.11.0"
+    },
+    "scripts": {
+        "test": "make test"
+    },
+    "readmeFilename": "README.md"
 }
