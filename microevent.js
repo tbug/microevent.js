@@ -32,6 +32,9 @@
         }
     };
 
+    MicroEvent.prototype.on = MicroEvent.prototype.bind;
+    MicroEvent.prototype.off = MicroEvent.prototype.unbind;
+
     /**
      * mixin will delegate all MicroEvent.js function in the destination object
      * @param {Object} the object which will support MicroEvent
