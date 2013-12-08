@@ -17,7 +17,8 @@
     "optionalDependencies": {
     },
     "devDependencies": {
-        "mocha": "~1.11.0"
+        "mocha": "~1.11.0",
+        "jscoverage": "~0.3.8"
     },
     "scripts": {
         "test": "make test"
