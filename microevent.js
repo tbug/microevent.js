@@ -34,9 +34,6 @@
 
     /**
      * mixin will delegate all MicroEvent.js function in the destination object
-     *
-     * - require('MicroEvent').mixin(Foobar) will make Foobar able to use MicroEvent
-     *
      * @param {Object} the object which will support MicroEvent
      */
     MicroEvent.mixin = function(destObject) {
