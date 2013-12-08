@@ -1,4 +1,4 @@
-var MicroEvent = require('../');
+var MicroEvent = require('../cov-microevent.js');
 var assert = require('assert');
 
 var Ticker = function(interval) {
